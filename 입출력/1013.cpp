@@ -4,8 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a = 0b10000000000000000000000000000000;
-    int b = 0b01111111111111111111111111111111;
+    int a, b;
+
+    cin >> a >> b;
 
     cout << a << " " << b;
 

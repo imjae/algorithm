@@ -1,17 +1,12 @@
-#include <sstream>
-#include <vector>
-#include <iostream>
-#include <stdlib.h>
-
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
-    char data[2001];
+    int a, b;
 
-    fgets(data, 2000, stdin);
+    scanf("%d.%d", &a, &b);
 
-    printf("%s", data);
+    printf("%d\n%d", a, b);
 
     return 0;
 }

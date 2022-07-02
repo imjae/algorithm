@@ -3,13 +3,14 @@
 #include <iostream>
 #include <stdlib.h>
 
+using namespace std;
 
 int main()
 {
-    int a, b, c;
-    scanf("%d.%d.%d", &a, &b, &c);
+    int a, b;
+    scanf("%d-%d", &a, &b);
 
-    printf("%04d.%02d.%02d", a, b, c);
+    printf("%06d%07d", a, b);
 
     return 0;
 }

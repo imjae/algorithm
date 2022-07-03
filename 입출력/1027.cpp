@@ -6,11 +6,10 @@ using namespace std;
 
 int main()
 {
-    int y, m, d;
+    unsigned int n;
+    scanf("%u", &n);
 
-    scanf("%d.%d.%d", &y, &m, &d);
-
-    printf("%02d-%02d-%04d", d, m, y);
+    printf("%u", n);
 
     return 0;
 }

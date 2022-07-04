@@ -7,14 +7,17 @@ using namespace std;
 
 int main()
 {
-    int a;
+    int a, b;
+    int num = 1;
 
-    while(true)
+    cin >> a;
+
+    while (num <= a)
     {
-        cin >> a;
+        num++;
 
-        if(a == 0) break;
-        cout << a << endl;
+        cin >> b;
+        cout << b << endl;
     }
 
     return 0;

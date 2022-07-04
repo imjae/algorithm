@@ -9,12 +9,14 @@ int main()
 {
     int a;
 
-    while(true)
-    {
-        cin >> a;
+    cin >> a;
 
-        if(a == 0) break;
-        cout << a << endl;
+    while (true)
+    {
+        if (a == 0)
+            break;
+
+        cout << --a << endl;
     }
 
     return 0;

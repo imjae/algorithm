@@ -7,14 +7,16 @@ using namespace std;
 
 int main()
 {
-    int a;
+    char a;
 
-    while(true)
+    while (true)
     {
         cin >> a;
 
-        if(a == 0) break;
         cout << a << endl;
+
+        if (a == 'q')
+            break;
     }
 
     return 0;

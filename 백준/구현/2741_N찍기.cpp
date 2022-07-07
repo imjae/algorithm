@@ -1,7 +1,4 @@
-#include <stdlib.h>
 #include <iostream>
-#include <string>
-#include <vector>
 
 using namespace std;
 
@@ -12,7 +9,7 @@ int main()
 
     for(int i=1; i<=a; i++)
     {
-        cout << i << endl;
+        cout << i << "\n";
     }
 
     return 0;

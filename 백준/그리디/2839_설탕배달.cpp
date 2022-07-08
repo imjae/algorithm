@@ -25,39 +25,18 @@ int main()
 
         if (tmp % 3 == 0)
         {
-            smallVector.push_back(small);
-            bigVector.push_back(big);
+            cout << small + big;
+            break;
         }
 
         stdNum--;
 
         if (stdNum < 0)
         {
+            cout << -1;
             break;
         }
     }
-
-    int bigCount = -1;
-    int resultIndex = 0;
-    for (int i = 0; i < smallVector.size(); i++)
-    {
-        if (bigCount < bigVector[i])
-        {
-            bigCount = bigVector[i];
-            resultIndex = i;
-        }
-    }
-
-    if (bigCount == -1)
-    {
-        result = -1;
-    }
-    else
-    {
-        result = smallVector[resultIndex] + bigVector[resultIndex];
-    }
-
-    cout << result;
-
+    
     return 0;
 }

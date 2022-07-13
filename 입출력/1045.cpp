@@ -10,7 +10,9 @@ int main()
 
     cin >> a >> b;
 
-    cout << a + b << endl;
+    cout.setf(ios::fixed);
+    cout.precision(6);
+    cout << a + (float)b << endl;
     cout << a - b << endl;
     cout << a * b << endl;
     cout << a / b << endl;

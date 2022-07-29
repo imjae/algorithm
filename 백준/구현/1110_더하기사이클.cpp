@@ -1,21 +1,40 @@
 #include <stdlib.h>
 #include <iostream>
 #include <string>
-#include <vector>
 
 using namespace std;
 
+int test(int num)
+{
+    int result = 0;
+
+    int a = num / 10;
+    int b = num % 10;
+    int c = a + b;
+
+    result = (b * 10) + (c % 10);
+
+    return result;
+}
+
 int main()
 {
-    int a;
+    int num, result, count = 0;
 
-    int first = a / 10;
-    int second = a % 10;
-    
-    int tmp = first + second;
+    cin >> num;
 
-    
+    int su = num;
 
+    while (true)
+    {
+        count++;
+        su = test(su);
+
+        if (su == num)
+            break;
+    }
+
+    cout << count;
 
     return 0;
 }
